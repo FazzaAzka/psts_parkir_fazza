@@ -1,10 +1,10 @@
 <?php 
 
-$id_siswa=$_GET['id'];
+$id=$_GET['id'];
 
 include '../../config/koneksi.php';
 
-$query = mysqli_query($conn, "DELETE FROM parkir WHERE id='$id");
+$query = mysqli_query($conn, "DELETE FROM barang WHERE id_barang='$id' ");
 
 if($query){
     echo "<script>alert('Data berhasil dihapus')</script>";

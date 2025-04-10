@@ -1,12 +1,11 @@
-<?php
+<?php 
 
 $hostname = 'localhost';
 $username = 'root';
-$password = '';
-$database_name = 'db_parkir_raisya';
+$passworrd = '';
+$db_name = 'db_inventory_fazza';
 
-$conn =mysqli_connect($hostname,$username,$password,$database_name);
-
+$conn = mysqli_connect($hostname,$username,$passworrd,$db_name);
 if(!$conn){
-    die("Koneksi Gagal : " . mysqli_connect_error());
+    die('koneksi gagal.' . mysqli_connect_error());
 }
